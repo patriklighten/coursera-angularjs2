@@ -33,12 +33,11 @@
     <!-- To Buy List -->
     <div class="col-md-6" ng-controller='ToByController as toBuy'>
      <h2>To Buy:</h2>
-     <ol>
+     <ul>
       
-
        <li ng-repeat="item in toBuy.items">Buy {{ item.quantity }} of {{ item.name }} <button class="btn btn-default" ng-click="toBuy.removeItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        
-     </ol>
+     </ul>
      <div ng-if="toBuy.items.length===0"  class="emptyMessage">Everything is bought!</div>
     </div>
 
